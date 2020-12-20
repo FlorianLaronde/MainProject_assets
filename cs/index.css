@@ -1,0 +1,246 @@
+/* General style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color :white !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* ******************************************************************** */
+
+/* Première page de la page d'accueil */
+#homeFirstPage {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fullscreen Video Background */
+/* Div englobant ma video */
+#myVideo {
+    width: 100%;
+    height: 100vh;
+    /* Relative to 1% of the height of the viewport */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Ma vidéo */
+#myVideo video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /*définit la façon dont le contenu d'un élément remplacé doit s'adapter à son conteneur en utilisant sa largeur et sa hauteur */
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Le contenu sur ma vidéo */
+#myVideo #contentOnVideo {
+    z-index: 1;
+    /* centrer une div */
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* p */
+#myVideo #contentOnVideo p {
+    font-size: 1.2rem;
+    color: #fff;
+    opacity: 0.6;
+}
+
+/* h1 */
+#myVideo #contentOnVideo h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 500%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 5%;
+}
+
+/* h1 Animation */
+.ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+}
+
+.ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+}
+
+.ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #402d2d;
+    transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+}
+
+.ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+}
+
+
+/* ****************************************************************** */
+
+/* Navbar */
+#navbar {
+    height: auto;
+    width: 100%;
+}
+
+#divInscriptionConnexion {
+    position: absolute;
+    top: 20%;
+    right: 1%;
+    height: 60%;
+}
+
+
+#divInscriptionConnexion ul li button {
+    color: #DEE85E;
+    text-shadow: 2px 2px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* Lien Navbar */
+#navbar a {
+    margin-left: 50px;
+    color: #DEE85E !important;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    transform: scale(1.0);
+    transition-duration: 500ms;
+}
+
+#navbar a:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+}
+
+
+
+/* Logo Horloge Navbar */
+/* Cadran horloge */
+/* Elle dirige le margin top de l'horloge et des liens  */
+#clock {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    /* margin:5px auto; */
+    position: relative;
+    /* padding:0.5rem; */
+    box-shadow:
+        0 0 0 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* inside horloge */
+#clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transform: translateY(-3px); */
+    background-image: url(../img/LogoNavbar.jpg);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+/* Aiguilles horloge */
+.hand {
+    width: 50%;
+    height: 2px;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    /* permet de modifier l'origine du repère pour les opérations de transformation d'un élément */
+    transform: rotate(90deg);
+    /* transition: all 0.05s; */
+    /* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************ */
+/* Deuxième page de la page d'accueil */
+#homeSecondPage {
+    width: 100%;
+    height: 100%;
+}
+
+/* Sommaire */
+#summary {
+    height: auto;
+    background-color: #0B145D;
+    opacity: 0.5;
+    border-radius: 5%;
+}
+
+#summary h2 {
+    font-size: 36px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#summary ol li {
+    font-size: 24px;
+}
+
+/* Caroussel */
+#myCaroussel {
+    height: 100%;
+}
+
+
+/* **************************************************************************** */
